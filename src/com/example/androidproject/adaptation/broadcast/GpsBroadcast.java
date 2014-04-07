@@ -10,7 +10,6 @@ public class GpsBroadcast extends BroadcastReceiver {
 	
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		// TODO Auto-generated method stub
 		this.distance = intent.getExtras().getDouble("distance");
 		
 		System.out.println("[distance]received intend msg : " + distance);

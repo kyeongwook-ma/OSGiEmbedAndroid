@@ -49,11 +49,7 @@ public interface IApplicationCallback {
 	 * @param bundleName Bundle-Name attribute of the OSGi bundle
 	 */
 	public void onInstalledBundle(String bundleName);
-	
-	/**
-	 * Notifies that the bundle has been uninstalled in the OSGi framework
-	 * 
-	 * @param bundleName Bundle-Name attribute of the OSGi bundle
-	 */
 	public void onUninstalledBundle(String bundleName);
+	public void onStartedBundle(String bundleName);
+	public void onStopedBundle(String bundleName);
 }

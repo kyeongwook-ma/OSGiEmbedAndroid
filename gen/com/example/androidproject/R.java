@@ -119,7 +119,11 @@ public final class R {
         public static final int user_register=0x7f080005;
     }
     public static final class raw {
-        public static final int timebundle=0x7f040000;
+        public static final int example1=0x7f040000;
+        public static final int felix=0x7f040001;
+        public static final int mybundle=0x7f040002;
+        public static final int slf4j=0x7f040003;
+        public static final int timebundle=0x7f040004;
     }
     public static final class string {
         public static final int UpdateButton=0x7f06001d;

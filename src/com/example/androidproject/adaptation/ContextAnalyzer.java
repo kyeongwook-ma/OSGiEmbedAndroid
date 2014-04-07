@@ -12,6 +12,7 @@ import android.location.LocationManager;
 
 import com.example.androidproject.adaptation.broadcast.BroadcastRepository;
 import com.example.androidproject.adaptation.broadcast.TimeBroadcast;
+import com.example.androidproject.adaptation.bundle.BundleType;
 import com.example.androidproject.db.MMRSDBHelper;
 import com.example.androidproject.schedule.Schedule;
 
@@ -38,6 +39,18 @@ public class ContextAnalyzer {
 		while (iterator.hasNext()) {
 			
 			String key = (String) iterator.next();
+			
+			/*
+			 *  find key from xml
+			 */
+			
+			
+			BundleType bundle = BundleType.getBundleType(key);
+			bundle.loadBundle();
+			
+			/*
+			 * 번들에게 메세지 전송
+			 */
 			
 			if (key.equals("time")) {
 			

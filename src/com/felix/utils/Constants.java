@@ -30,6 +30,8 @@ public class Constants {
 	public final static String ACTION_ADD = "action.add";
 	public final static String ACTION_REMOVE = "action.remove";
 	public final static String ACTION_UPDATE = "action.update";
+	public final static String ACTION_START = "action.start";
+	public final static String ACTION_STOP = "action.stop";
 	public final static String ACTION_LAUNCH = "action.launch";
 	public final static String ACTION_SHUTDOWN = "action.shutdown";
 	public final static String ACTION_INSTALL = "action.install";

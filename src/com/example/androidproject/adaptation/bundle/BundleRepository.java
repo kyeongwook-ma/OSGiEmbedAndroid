@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class BundleRepository {
 
-	private Map<String, Bundle> bundles = new HashMap<String, Bundle>();
+	private Map<String, BundleType> bundles = new HashMap<String, BundleType>();
 	
 	private static final class SingletonHolder {
 		
@@ -17,26 +17,23 @@ public class BundleRepository {
 		return SingletonHolder.singleton;
 	}
 	
-	private Bundle newBundle(String className) {
+	private BundleType newBundle(String className) {
 		
-		Bundle obj = null;
+		BundleType obj = null;
 		
 		try {
 			
 			Class<?> cls = Class.forName(className);
 			
-			obj = (Bundle) cls.newInstance();
+			obj = (BundleType) cls.newInstance();
 		}
 		catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		catch (InstantiationException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -56,7 +53,7 @@ public class BundleRepository {
 		bundles.remove(key);
 	}
 	
-	public Map<String, Bundle> getBundles() {
+	public Map<String, BundleType> getBundles() {
 		
 		return bundles;
 	}

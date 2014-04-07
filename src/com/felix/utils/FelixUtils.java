@@ -258,6 +258,24 @@ public class FelixUtils {
 			context.sendBroadcast(uninstallIntent);
 		}
 	}
+
+	public void startBundle(String bundleName) {
+		if (context != null && bundleName != null && bundleName.length() > 0) {
+			Intent uninstallIntent = new Intent(Constants.BUNDLE_PAGE);
+			uninstallIntent.putExtra(Constants.ACTION, Constants.ACTION_START);
+			uninstallIntent.putExtra(Constants.BUNDLE_NAME, bundleName);
+			context.sendBroadcast(uninstallIntent);
+		}
+	}
+
+	public void stopBundle(String bundleName) {
+		if (context != null && bundleName != null && bundleName.length() > 0) {
+			Intent uninstallIntent = new Intent(Constants.BUNDLE_PAGE);
+			uninstallIntent.putExtra(Constants.ACTION, Constants.ACTION_STOP);
+			uninstallIntent.putExtra(Constants.BUNDLE_NAME, bundleName);
+			context.sendBroadcast(uninstallIntent);
+		}
+	}
 	
 	/**
 	 * Launch a MUSIC application
@@ -341,30 +359,24 @@ public class FelixUtils {
 		}
 	}
 
-	/**
-	 * Android broadcast receiver for bundle management notifications
-	 * 
-	 * @author Telefonica I+D
-	 */
 	private class BundleBroadcastReceiver extends BroadcastReceiver {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			if (callback != null) {
 				String action = intent.getExtras().getString(Constants.ACTION);
 				String bundleName = intent.getExtras().getString(Constants.BUNDLE_NAME);
-				if (action.equals(Constants.ACTION_ADD))
+				if (action.equals(Constants.ACTION_INSTALL))
 					callback.onInstalledBundle(bundleName);
-				else if (action.equals(Constants.ACTION_REMOVE))
+				else if (action.equals(Constants.ACTION_UNINSTALL))
 					callback.onUninstalledBundle(bundleName);
+				else if (action.equals(Constants.ACTION_START))
+					callback.onStartedBundle(bundleName);
+				else if (action.equals(Constants.ACTION_STOP))
+					callback.onStopedBundle(bundleName);
 			}
 		}
 	}
 
-	/**
-	 * Android broadcast receiver for application management notifications
-	 * 
-	 * @author Telefonica I+D
-	 */
 	private class ApplicationBroadcastReceiver extends BroadcastReceiver {
 		@Override
 		public void onReceive(Context context, Intent intent) {

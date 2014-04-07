@@ -2,29 +2,15 @@ package com.example.androidproject.adaptation.bundle.gps;
 
 import android.location.Location;
 
-import com.example.androidproject.adaptation.bundle.Bundle;
+import com.example.androidproject.adaptation.bundle.BundleType;
 
-public class GpsBundle implements Bundle {
+public class GpsBundle extends BundleType {
 
 	@Override
-	public Object analyzeContext(Object o1, Object o2) {
+	public void loadBundle() {
 		// TODO Auto-generated method stub
-		double distance = 0.0;
 		
-		try {
-		
-			Location src = (Location) o1;
-			Location dest = (Location) o2;
-			
-			distance = src.distanceTo(dest);
-		}
-		catch (NullPointerException e) {
-			// TODO: handle exception
-			e.printStackTrace();
-			
-			throw new IllegalArgumentException(e);
-		}
-		
-		return distance;
 	}
+
+
 }

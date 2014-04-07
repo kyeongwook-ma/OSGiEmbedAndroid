@@ -10,7 +10,6 @@ public class TimeBroadcast extends BroadcastReceiver {
 	
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		// TODO Auto-generated method stub
 		this.diff = intent.getExtras().getLong("diff");
 		
 		System.out.println("[diff]received intend msg : " + diff);
