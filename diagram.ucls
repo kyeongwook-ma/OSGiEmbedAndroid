@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.3" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="com.example.androidproject.schedule.Schedule" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/schedule/Schedule.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="405" width="207" x="1196" y="1681"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.example.androidproject.navermap.NMapCalloutCustomOldOverlay" 
+    project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/navermap/NMapCalloutCustomOldOverlay.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="999" width="449" x="1808" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" 
+    name="com.example.androidproject.schedule.ScheduleListFragment.ScheduleListAdapter.ScheduleRemoveListener" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/schedule/ScheduleListFragment.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="170" x="1443" y="1681"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.example.androidproject.naversearch.GeoTrans" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/naversearch/GeoTrans.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="891" width="261" x="332" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.example.androidproject.mmrs.Constants" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/mmrs/Constants.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="127" x="165" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.example.androidproject.mmrs.MainActivity" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/mmrs/MainActivity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="262" x="1272" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.example.androidproject.mmrs.GCMIntentService.AddUserRequestTask" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/mmrs/GCMIntentService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="177" x="6255" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.example.androidproject.schedule.UpdateSchedule.DatePickerFragment" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/schedule/UpdateSchedule.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="199" x="2530" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.example.androidproject.schedule.ScheduleListFragment" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/schedule/ScheduleListFragment.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="293" x="1920" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.example.androidproject.participant.Participant" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/participant/Participant.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="136" x="982" y="2162"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.example.androidproject.schedule.ScheduleRegisterActivity.GetUsersRequestTask" 
+    project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/schedule/ScheduleRegisterActivity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="171" x="5055" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.example.androidproject.mmrs.MainActivity.AddUserRequestTask" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/mmrs/MainActivity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="177" x="1055" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.example.androidproject.naversearch.GeoPoint" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/naversearch/GeoPoint.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="179" x="633" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.example.androidproject.schedule.ScheduleRegisterActivity.DatePickerFragment" 
+    project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/schedule/ScheduleRegisterActivity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="199" x="5266" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.example.androidproject.user.FriendListFragment.GetUsersRequestTask" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/user/FriendListFragment.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="171" x="6472" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.example.androidproject.schedule.ScheduleListFragment.ScheduleListAdapter" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/schedule/ScheduleListFragment.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="226" x="1542" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.example.androidproject.naversearch.Item" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/naversearch/Item.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="441" width="134" x="3828" y="1681"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.example.androidproject.schedule.UpdateSchedule" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/schedule/UpdateSchedule.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="225" width="208" x="2873" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.example.androidproject.user.User" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/user/User.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="165" x="982" y="2445"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.example.androidproject.schedule.UpdateSchedule.UpdateScheduleTask" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/schedule/UpdateSchedule.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="2769" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="com.example.androidproject.naversearch.Channel" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/naversearch/Channel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="369" width="146" x="3448" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="com.example.androidproject.schedule.ScheduleRegisterActivity.TimePickerFragment" 
+    project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/schedule/ScheduleRegisterActivity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="185" x="5505" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="com.example.androidproject.participant.ParticipantListActivity" 
+    project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/participant/ParticipantListActivity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="208" x="3634" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" 
+    name="com.example.androidproject.schedule.ScheduleListFragment.ScheduleListAdapter.SetStateCodeTask" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/schedule/ScheduleListFragment.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="173" x="1653" y="1681"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="com.example.androidproject.participant.ParticipantList" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/participant/ParticipantList.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="174" x="982" y="1681"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="com.example.androidproject.message.ChattingFragment.SendToAllRequestTask" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/message/ChattingFragment.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="170" x="3998" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="com.example.androidproject.navermap.NMapViewerResourceProvider" 
+    project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/navermap/NMapViewerResourceProvider.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="873" width="334" x="4473" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="com.example.androidproject.navermap.NMapViewerResourceProvider.ResourceIdsOnMap" 
+    project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/navermap/NMapViewerResourceProvider.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="168" x="4473" y="1681"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="com.example.androidproject.message.ChattingFragment" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/message/ChattingFragment.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="293" x="3998" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" 
+    name="com.example.androidproject.participant.ParticipantListActivity.GetParticipantsTask" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/participant/ParticipantListActivity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="324" x="3634" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="com.example.androidproject.navermap.NaverMapActivity.NaverSearchAdapter" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/navermap/NaverMapActivity.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="225" x="4208" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="com.example.androidproject.message.Message" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/message/Message.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="165" x="852" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="com.example.androidproject.naversearch.Rss" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/naversearch/Rss.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="130" x="3448" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="com.example.androidproject.navermap.NMapPOIflagType" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/navermap/NMapPOIflagType.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="423" width="175" x="1057" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" 
+    name="com.example.androidproject.schedule.ScheduleRegisterActivity.ParticipantPickerFragment" 
+    project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/schedule/ScheduleRegisterActivity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="218" x="5730" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="com.example.androidproject.schedule.UpdateSchedule.TimePickerFragment" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/schedule/UpdateSchedule.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="185" x="2984" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="com.example.androidproject.navermap.NaverMapActivity" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/navermap/NaverMapActivity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="333" width="326" x="4473" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="com.example.androidproject.mmrs.MainActivity.SectionsPagerAdapter" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/mmrs/MainActivity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="230" x="1272" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="com.example.androidproject.schedule.ScheduleRegisterActivity" 
+    project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/schedule/ScheduleRegisterActivity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="208" x="5505" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="com.example.androidproject.schedule.ScheduleListFragment.GetScheduleRequestTask" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/schedule/ScheduleListFragment.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="193" x="2297" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" 
+    name="com.example.androidproject.schedule.ScheduleListFragment.ScheduleListAdapter.RemoveScheduleTask" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/schedule/ScheduleListFragment.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="175" x="1866" y="1681"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="com.example.androidproject.navermap.NaverMapActivity.NaverSearchTask" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/navermap/NaverMapActivity.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="168" x="4847" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="com.example.androidproject.mmrs.GCMIntentService" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/mmrs/GCMIntentService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="199" x="6233" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="44" language="java" 
+    name="com.example.androidproject.schedule.ScheduleRegisterActivity.AddScheduleRequestTask" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/schedule/ScheduleRegisterActivity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="227" x="5988" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="45" language="java" 
+    name="com.example.androidproject.navermap.NMapCalloutCustomOldOverlay.ResourceProvider" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/navermap/NMapCalloutCustomOldOverlay.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="299" x="3141" y="1681"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="46" language="java" name="com.example.androidproject.user.FriendListFragment" project="AndroidProject" 
+    file="/AndroidProject/src/com/example/androidproject/user/FriendListFragment.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="293" x="6472" y="-289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="47" language="java" name="com.example.androidproject.schedule.UpdateSchedule.GetScheduleTask" 
+    project="AndroidProject" file="/AndroidProject/src/com/example/androidproject/schedule/UpdateSchedule.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="199" x="3209" y="642"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <nesting id="48">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="42"/>  
+  </nesting>  
+  <association id="49">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="50" name="items"/>      
+      <multiplicity id="51" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="52">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="53" name="mMapViewerResourceProvider"/>      
+      <multiplicity id="54" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="55">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="38"/>  
+  </nesting>  
+  <nesting id="56">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="24"/>  
+  </nesting>  
+  <nesting id="57">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="36"/>  
+  </nesting>  
+  <nesting id="58">    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="7"/>  
+  </nesting>  
+  <nesting id="59">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="16"/>  
+  </nesting>  
+  <nesting id="60">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="20"/>  
+  </nesting>  
+  <nesting id="61">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="8"/>  
+  </nesting>  
+  <nesting id="62">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="40"/>  
+  </nesting>  
+  <nesting id="63">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="15"/>  
+  </nesting>  
+  <association id="64">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="65" name="list1"/>      
+      <multiplicity id="66" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="67">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="68" name="items"/>      
+      <multiplicity id="69" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="70">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="71" name="mResourceIdsForMarkerOnMap"/>      
+      <multiplicity id="72" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="28" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="73">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="45"/>  
+  </nesting>  
+  <association id="74">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="75" name="list2"/>      
+      <multiplicity id="76" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="77">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="78" name="participants"/>      
+      <multiplicity id="79" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="80">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="22"/>  
+  </nesting>  
+  <association id="81">    
+    <end type="SOURCE" refId="33" navigable="false">      
+      <attribute id="82" name="channel"/>      
+      <multiplicity id="83" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="84">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="85" name="mSectionsPagerAdapter"/>      
+      <multiplicity id="86" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="87">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="26"/>  
+  </nesting>  
+  <nesting id="88">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="44"/>  
+  </nesting>  
+  <nesting id="89">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="11"/>  
+  </nesting>  
+  <nesting id="90">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="12"/>  
+  </nesting>  
+  <association id="91">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="92" name="schedules"/>      
+      <multiplicity id="93" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="94">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="35"/>  
+  </nesting>  
+  <nesting id="95">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="30"/>  
+  </nesting>  
+  <nesting id="96">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="47"/>  
+  </nesting>  
+  <nesting id="97">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="31"/>  
+  </nesting>  
+  <realization id="98">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="45"/>  
+  </realization>  
+  <nesting id="99">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="28"/>  
+  </nesting>  
+  <association id="100">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="101" name="list3"/>      
+      <multiplicity id="102" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="103">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="3"/>  
+  </nesting>  
+  <nesting id="104">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="41"/>  
+  </nesting>  
+  <association id="105">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="106" name="user"/>      
+      <multiplicity id="107" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="108">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="14"/>  
+  </nesting>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
