@@ -5,8 +5,6 @@ import com.felix.utils.FelixUtils;
 import com.felix.utils.IApplicationCallback;
 import com.felix.utils.NoMusicServiceException;
 
-import android.content.Context;
-
 public class ConfigurationManager {
 
 	private FelixUtils utils;
