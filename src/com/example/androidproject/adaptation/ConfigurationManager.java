@@ -90,6 +90,12 @@ public class ConfigurationManager {
 	
 	public void readConfigFromFile() {
 		
+		String bundleName = null;
+		int bundleID = 0;
+		
+		installBundle(bundleID);
+		loadBundle(bundleName);
+		
 	}
 
 

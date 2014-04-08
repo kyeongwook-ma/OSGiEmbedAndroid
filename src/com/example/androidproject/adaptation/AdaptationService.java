@@ -103,7 +103,6 @@ public class AdaptationService extends Service {
 
 		@Override
 		public void run() {
-			// TODO Auto-generated method stub
 			while (!mQuit) {
 				
 				adaptationContorller.execute();

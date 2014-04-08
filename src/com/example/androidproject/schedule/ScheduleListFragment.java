@@ -48,7 +48,7 @@ public class ScheduleListFragment extends Fragment {
 
 		mHelper = new MMRSDBHelper(getActivity());
 		
-		new GetScheduleRequestTask().execute(GCMRegistrar.getRegistrationId(getActivity()));
+		// new GetScheduleRequestTask().execute(GCMRegistrar.getRegistrationId(getActivity()));
 
 		return rootView;
 	}
