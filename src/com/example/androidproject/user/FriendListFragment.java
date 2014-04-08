@@ -28,7 +28,7 @@ public class FriendListFragment extends Fragment {
 		// TODO Auto-generated method stub
 		View rootView = inflater.inflate(R.layout.layout_friend_list, container, false);
         
-        new GetUsersRequestTask().execute();
+       // new GetUsersRequestTask().execute();
         
 		return rootView;
 	}

@@ -9,7 +9,6 @@ public class DefaultBehavior implements Behavior {
 	
 	@Override
 	public void runAction(String text) {
-		// TODO Auto-generated method stub
 		Message msg = new Message();
 		
 		msg.what = 0;

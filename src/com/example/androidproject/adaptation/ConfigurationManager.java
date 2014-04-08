@@ -1,50 +1,99 @@
 package com.example.androidproject.adaptation;
 
-import android.content.Context;
-
-import com.example.androidproject.adaptation.broadcast.BroadcastRepository;
+import com.OSGiEmbedApp;
 import com.felix.utils.FelixUtils;
+import com.felix.utils.IApplicationCallback;
+import com.felix.utils.NoMusicServiceException;
+
+import android.content.Context;
 
 public class ConfigurationManager {
 
 	private FelixUtils utils;
-	private Context context;
-	
-	public void loadBundle(int rawResourceId, String id, String className) {
-		// TODO Auto-generated method stub
-//		BundleRepository repository = BundleRepository.getInstance();
-//		
-//		repository.addBundle(id, className);
-		//utils.installBundle(rawResourceId);
+	private static ConfigurationManager instance;
 		
-		BroadcastRepository repository = BroadcastRepository.getInstance();
-		
-		//BroadcastReceiver receiver = repository.addBroadcastReceiver(id, className);
-		
-		/*IntentFilter filter = new IntentFilter();
-		
-		filter.addAction("com.example.androidproject.app." + id);
-		
-		context.registerReceiver(receiver, filter);*/
+	static {
+		instance = new ConfigurationManager();
 	}
 
-	public void unloadBundle(String id) {
-		// TODO Auto-generated method stub
-//		BundleRepository repository = BundleRepository.getInstance();
-//		
-//		repository.removeBundle(id);
-		BroadcastRepository repository = BroadcastRepository.getInstance();
-		
-		//BroadcastReceiver receiver = repository.getBroadcastReceiver(id);
-		
-		//context.unregisterReceiver(receiver);
-	}
-	
-	public void setUtils(FelixUtils utils) {
-		this.utils = utils;
+	private ConfigurationManager() {
+		try {
+			utils = new FelixUtils(OSGiEmbedApp.getContext() , new IApplicationCallback() {
+
+				@Override
+				public void onUninstalledBundle(String bundleName) {
+
+				}
+
+				@Override
+				public void onUninstalledApplication(String applicationType) {
+
+				}
+
+				@Override
+				public void onStopedBundle(String bundleName) {
+
+				}
+
+				@Override
+				public void onStartedBundle(String bundleName) {
+
+				}
+
+				@Override
+				public void onShutdownApplication(String applicationType) {
+
+				}
+
+				@Override
+				public void onLaunchedMiddleware() {
+
+				}
+
+				@Override
+				public void onLaunchedApplication(String applicationType) {
+
+				}
+
+				@Override
+				public void onInstalledBundle(String bundleName) {
+
+				}
+
+				@Override
+				public void onInstalledApplication(String applicationType) {
+
+				}
+			});
+		} catch (NoMusicServiceException e) {
+			e.printStackTrace();
+		}
 	}
 
-	public void setContext(Context context) {
-		this.context = context;
+	public static ConfigurationManager getInstance() {
+		if(instance != null) {
+			return instance;
+		} else {
+			return new ConfigurationManager();
+		}
 	}
+
+	public synchronized void installBundle(int bundleID) {
+		utils.installBundle(bundleID);
+	}
+
+	public synchronized void loadBundle(String bundleName) {
+		utils.startBundle(bundleName);
+	}
+
+	public synchronized void unloadBundle(String bundleName) {
+		utils.stopBundle(bundleName);
+	}
+	
+	public void readConfigFromFile() {
+		
+	}
+
+
+
 }

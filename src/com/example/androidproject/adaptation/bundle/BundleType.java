@@ -1,19 +1,33 @@
 package com.example.androidproject.adaptation.bundle;
 
-import com.example.androidproject.adaptation.bundle.gps.GpsBundle;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 
 public abstract class BundleType {
 
-	public abstract void loadBundle();
-	
-	
-	public static BundleType getBundleType(String className) {
-		if(className.equals(GpsBundle.class.getSimpleName())) {
-			return new GpsBundle();
-		}
-		return null;
+	protected BroadcastReceiver broadcastReceiver;	
+	protected Context context;
+	protected Intent intent;
+	protected IntentFilter filter;
+	protected String name;
+	protected int ID;
+		
+	public BundleType(Context context) {
+		this.context = context;
+		this.intent = new Intent();
+		this.filter = new IntentFilter();
 	}
-
-
+	
+	public abstract void sendMessage() ;
+	
+	public void removeBroadcast() {
+		context.unregisterReceiver(broadcastReceiver);
+	}
+	
+	public int getBundleID() {
+		return this.ID;
+	}
 	
 }

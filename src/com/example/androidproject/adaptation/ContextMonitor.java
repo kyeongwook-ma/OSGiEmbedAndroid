@@ -1,10 +1,10 @@
 package com.example.androidproject.adaptation;
 
 import com.example.androidproject.R;
+import com.example.androidproject.adaptation.bundle.time.TimeBroadcast;
 
 public class ContextMonitor {
 
-	private ConfigurationManager configurationManager;
 	
 	public void monitor() {
 		
@@ -14,11 +14,11 @@ public class ContextMonitor {
 		if (timeEnable) {
 			
 			//configurationManager.loadBundle(R.raw.timebundle , "time", "com.example.androidproject.adaptation.bundle.time.TimeBundle");
-			configurationManager.loadBundle(R.raw.timebundle , "time", "com.example.androidproject.adaptation.broadcast.TimeBroadcast");
+			ConfigurationManager.getInstance().loadBundle(TimeBroadcast.class.getName());
 		}
 		else {
 
-			configurationManager.unloadBundle("time");
+			
 		}
 		
 		/*if (gpsEnable) {
@@ -31,7 +31,6 @@ public class ContextMonitor {
 		}*/
 	}
 
-	public void setConfigurationManager(ConfigurationManager configurationManager) {
-		this.configurationManager = configurationManager;
-	}
+
+	
 }

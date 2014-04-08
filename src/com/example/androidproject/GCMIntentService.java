@@ -46,18 +46,20 @@ public class GCMIntentService extends GCMBaseIntentService {
 
 		@Override
 		protected String doInBackground(String... params) {
-			// TODO Auto-generated method stub
 			String registrationId = params[0];
 			
 			String url = Constants.URL + "/addUser?registrationId=" + registrationId;
 			
 			RestTemplate restTemplate = new RestTemplate();
 			
+			try {
 			restTemplate.getMessageConverters().add(new StringHttpMessageConverter());
+									
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
 			
-			String result = restTemplate.getForObject(url, String.class);
-			
-			return result;
+			return restTemplate.getForObject(url, String.class);
 		}
 
 		@Override

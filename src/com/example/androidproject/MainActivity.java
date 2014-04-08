@@ -63,7 +63,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
 				String registrationId = GCMRegistrar.getRegistrationId(context);
 
-				new AddUserRequestTask().execute(registrationId);
+				// new AddUserRequestTask().execute(registrationId);
 			}
 		}
 		catch (Exception e) {

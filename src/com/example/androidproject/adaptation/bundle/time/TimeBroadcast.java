@@ -1,4 +1,4 @@
-package com.example.androidproject.adaptation.broadcast;
+package com.example.androidproject.adaptation.bundle.time;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -14,7 +14,6 @@ public class TimeBroadcast extends BroadcastReceiver {
 		
 		System.out.println("[diff]received intend msg : " + diff);
 	}
-
 	public long getDiff() {
 		return diff;
 	}

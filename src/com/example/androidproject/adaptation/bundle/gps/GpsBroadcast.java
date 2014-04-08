@@ -1,4 +1,4 @@
-package com.example.androidproject.adaptation.broadcast;
+package com.example.androidproject.adaptation.bundle.gps;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

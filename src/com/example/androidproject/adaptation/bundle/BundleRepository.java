@@ -1,20 +1,32 @@
 package com.example.androidproject.adaptation.bundle;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
-public class BundleRepository {
+import android.content.Context;
+
+import com.example.androidproject.adaptation.ConfigurationManager;
+import com.felix.utils.FelixUtils;
+import com.felix.utils.NoMusicServiceException;
+
+public class BundleRepository  {
 
 	private Map<String, BundleType> bundles = new HashMap<String, BundleType>();
-	
-	private static final class SingletonHolder {
-		
-		private static final BundleRepository singleton = new BundleRepository();
+	private static BundleRepository instance;
+
+	static {
+		instance = new BundleRepository();
 	}
 	
+	private BundleRepository() { }
+	
 	public static BundleRepository getInstance() {
-		
-		return SingletonHolder.singleton;
+		if(instance != null) {
+			return instance;
+		} else {
+			return new BundleRepository();
+		}
 	}
 	
 	private BundleType newBundle(String className) {
@@ -40,21 +52,43 @@ public class BundleRepository {
 		return obj;
 	}
 	
-	public void addBundle(String key, String className) {
+
+	public void sendBroadcastToBundle() {
+			Iterator<String> bundleKey = bundles.keySet().iterator();
+			
+			while(bundleKey.hasNext()) {
+				String key = bundleKey.next();
+				bundles.get(key).sendMessage();
+			}
+	}
+	
+	public void removeAllBroadcast() {
+		Iterator<String> bundleKey = bundles.keySet().iterator();
 		
-		if (!bundles.containsKey(key)) {
-		
-			bundles.put(key, newBundle(className));
+		while(bundleKey.hasNext()) {
+			String key = bundleKey.next();
+			bundles.get(key).removeBroadcast();
 		}
 	}
 	
-	public void removeBundle(String key) {
+	public void addBundle(String bundleName) {
 		
+		BundleType bundle = newBundle(bundleName);
+		
+		if (!bundles.containsKey(bundleName)) {
+			bundles.put(bundleName, bundle);
+		}
+		
+		ConfigurationManager.getInstance().installBundle(bundle.getBundleID());
+	}
+	
+	public void removeBundle(String key) {
 		bundles.remove(key);
 	}
 	
 	public Map<String, BundleType> getBundles() {
-		
 		return bundles;
 	}
+
+	
 }
