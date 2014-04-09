@@ -17,11 +17,12 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.widget.Toast;
 
-import com.example.androidproject.R;
 import com.example.androidproject.adaptation.AdaptationService;
 import com.example.androidproject.message.ChattingFragment;
 import com.example.androidproject.schedule.ScheduleListFragment;
 import com.example.androidproject.user.FriendListFragment;
+import com.example.androidproject.util.XMLUtil;
+import com.example.androidproject.util.XMLUtil.ConfigBuilder;
 import com.google.android.gcm.GCMRegistrar;
 
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
@@ -110,6 +111,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
 			actionBar.addTab(tab);
 		}
+		
+		
 	}
 
 //	占쏙옙占�menubar 占쏙옙占�//	@Override

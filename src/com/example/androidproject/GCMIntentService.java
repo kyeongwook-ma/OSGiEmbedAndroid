@@ -32,8 +32,7 @@ public class GCMIntentService extends GCMBaseIntentService {
 
 	@Override
 	protected void onRegistered(Context context, String registrationId) {
-		// TODO Auto-generated method stub
-		new AddUserRequestTask().execute(registrationId);
+		// new AddUserRequestTask().execute(registrationId);
 	}
 
 	@Override

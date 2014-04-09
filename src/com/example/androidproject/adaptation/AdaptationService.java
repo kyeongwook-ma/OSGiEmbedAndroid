@@ -4,7 +4,6 @@ import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
@@ -15,12 +14,7 @@ import android.os.IBinder;
 import android.os.Message;
 import android.widget.Toast;
 
-import com.example.androidproject.R;
-import com.example.androidproject.adaptation.bundle.BundleRepository;
 import com.example.androidproject.adaptation.bundle.time.TimeBroadcast;
-import com.example.androidproject.db.MMRSDBHelper;
-import com.felix.utils.FelixUtils;
-import com.felix.utils.NoMusicServiceException;
 
 public class AdaptationService extends Service {
 
@@ -53,7 +47,7 @@ public class AdaptationService extends Service {
 		/*
 		 * 
 		 */
-		BundleRepository.getInstance().removeAllBroadcast();
+		ConfigurationManager.getInstance().removeAllBroadcast();
 	
 		Toast.makeText(AdaptationService.this, "service end", Toast.LENGTH_SHORT).show();
 		
@@ -66,32 +60,9 @@ public class AdaptationService extends Service {
 		mQuit = false;
 
 		locationManager.requestLocationUpdates(provider, 10 * 1000, 10, locationListener);
-
-		 
 		
-		// BundleRepository.getInstance().addBundle();
+		ConfigurationManager.getInstance().readConfigFromFile();
 		
-		//		
-//		utils = null;
-//		
-//		try {
-//			utils = new FelixUtils(this, null);
-//		} catch (NoMusicServiceException e) {
-//			e.printStackTrace();
-//		}
-//		/*
-//		 * 
-//		 */
-//		utils.installBundle(R.raw.timebundle);
-//		
-//		BundleRepository.getInstance().addBundle(key, bundleName);
-//		
-//		BroadcastRepository.getInstance().addBroadcastReceiver("time", mTimeReceiver);
-//		
-		
-		/*
-		 * 
-		 */
 		adaptationContorller = new AdaptationContorller(this, locationManager, provider, mHandler);
 		
 		new AdaptationThread().start();

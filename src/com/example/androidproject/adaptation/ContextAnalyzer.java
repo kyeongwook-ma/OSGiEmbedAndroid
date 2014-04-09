@@ -3,9 +3,6 @@ package com.example.androidproject.adaptation;
 import android.content.Context;
 import android.location.LocationManager;
 
-import com.example.androidproject.adaptation.bundle.BundleRepository;
-import com.example.androidproject.db.MMRSDBHelper;
-
 public class ContextAnalyzer {
 
 	private Context context;
@@ -14,8 +11,7 @@ public class ContextAnalyzer {
 	
 	public void analyze() {
 				
-		BundleRepository repository = BundleRepository.getInstance();
-		repository.sendBroadcastToBundle();
+		ConfigurationManager.getInstance().sendBroadcastToBundle();
 				
 	}
 	
