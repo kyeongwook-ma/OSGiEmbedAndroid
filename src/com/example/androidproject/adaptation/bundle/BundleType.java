@@ -1,5 +1,7 @@
 package com.example.androidproject.adaptation.bundle;
 
+import com.OSGiEmbedApp;
+
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -11,13 +13,13 @@ public abstract class BundleType {
 	protected Context context;
 	protected Intent intent;
 	protected IntentFilter filter;
-	protected String name;
-	protected int ID;
+	protected BundleSpec spec;
 		
-	public BundleType(Context context) {
-		this.context = context;
+	public BundleType() {
+		this.context = OSGiEmbedApp.getContext();
 		this.intent = new Intent();
 		this.filter = new IntentFilter();
+		this.spec = new BundleSpec();
 	}
 	
 	public abstract void sendMessage() ;
@@ -27,7 +29,7 @@ public abstract class BundleType {
 	}
 	
 	public int getBundleID() {
-		return this.ID;
+		return this.spec.getRawID();
 	}
 	
 }

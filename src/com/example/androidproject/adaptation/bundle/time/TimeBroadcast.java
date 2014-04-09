@@ -14,6 +14,7 @@ public class TimeBroadcast extends BroadcastReceiver {
 		
 		System.out.println("[diff]received intend msg : " + diff);
 	}
+	
 	public long getDiff() {
 		return diff;
 	}

@@ -14,7 +14,7 @@ public class ContextMonitor {
 		if (timeEnable) {
 			
 			//configurationManager.loadBundle(R.raw.timebundle , "time", "com.example.androidproject.adaptation.bundle.time.TimeBundle");
-			ConfigurationManager.getInstance().startBundle(TimeBroadcast.class.getName());
+			// ConfigurationManager.getInstance().startBundle(TimeBroadcast.class.getName());
 		}
 		else {
 

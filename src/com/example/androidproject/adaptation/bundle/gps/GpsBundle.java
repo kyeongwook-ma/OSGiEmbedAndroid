@@ -1,14 +1,11 @@
 package com.example.androidproject.adaptation.bundle.gps;
 
-import android.content.Context;
-import android.location.Location;
-
 import com.example.androidproject.adaptation.bundle.BundleType;
 
 public class GpsBundle extends BundleType {
 
-	public GpsBundle(Context context) {
-		super(context);
+	public GpsBundle() {
+		super();
 		broadcastReceiver = new GpsBroadcast();
 	}
 

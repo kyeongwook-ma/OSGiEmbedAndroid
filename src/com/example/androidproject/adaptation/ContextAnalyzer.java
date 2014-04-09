@@ -11,7 +11,7 @@ public class ContextAnalyzer {
 	
 	public void analyze() {
 				
-		ConfigurationManager.getInstance().sendBroadcastToBundle();
+		// ConfigurationManager.getInstance().sendBroadcastToBundle();
 				
 	}
 	

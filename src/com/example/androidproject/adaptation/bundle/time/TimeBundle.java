@@ -16,9 +16,8 @@ public class TimeBundle extends BundleType {
 	private long diff;
 	private MMRSDBHelper dbHelper;
 	
-	public TimeBundle(Context context) {
-		super(context);
-		this.ID = R.raw.timebundle;
+	public TimeBundle() {
+		spec.setRawID(R.raw.timebundle);
 		registerReceiver();
 	}
 	

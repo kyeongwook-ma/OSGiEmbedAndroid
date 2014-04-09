@@ -2,10 +2,15 @@ package com.example.androidproject.adaptation;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 import com.OSGiEmbedApp;
+import com.example.androidproject.adaptation.bundle.BundleSpec;
 import com.example.androidproject.adaptation.bundle.BundleType;
+import com.example.androidproject.adaptation.bundle.time.TimeBroadcast;
+import com.example.androidproject.adaptation.bundle.time.TimeBundle;
+import com.example.androidproject.util.XMLUtil;
 import com.felix.utils.FelixUtils;
 import com.felix.utils.IApplicationCallback;
 import com.felix.utils.NoMusicServiceException;
@@ -97,36 +102,23 @@ public class ConfigurationManager {
 	}	
 	
 	public void readConfigFromFile() {
+				
+		List<BundleSpec> bundleList = XMLUtil.getBundleList();
 		
-		String bundleName = null;
-		int bundleID = 0;
-		
-		installBundle(bundleID);
-		startBundle(bundleName);
+		for(BundleSpec spec : bundleList) {
+			installBundle(spec.getRawID());
+			startBundle(spec.getName());
+		}
 		
 	}
 
 	private BundleType newBundle(String className) {
-		
-		BundleType obj = null;
-		
-		try {
-			
-			Class<?> cls = Class.forName(className);
-			
-			obj = (BundleType) cls.newInstance();
+				
+		if(className.equals(TimeBroadcast.class.getName())) {
+			return new TimeBundle();
 		}
-		catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
-		catch (InstantiationException e) {
-			e.printStackTrace();
-		}
-		catch (IllegalAccessException e) {
-			e.printStackTrace();
-		}
-		
-		return obj;
+		return null;
+	
 	}
 	
 

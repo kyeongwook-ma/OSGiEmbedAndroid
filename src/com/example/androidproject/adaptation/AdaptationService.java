@@ -14,7 +14,11 @@ import android.os.IBinder;
 import android.os.Message;
 import android.widget.Toast;
 
+import com.example.androidproject.R;
 import com.example.androidproject.adaptation.bundle.time.TimeBroadcast;
+import com.example.androidproject.adaptation.bundle.time.TimeBundle;
+import com.example.androidproject.util.XMLUtil;
+import com.example.androidproject.util.XMLUtil.ConfigBuilder;
 
 public class AdaptationService extends Service {
 
@@ -60,8 +64,9 @@ public class AdaptationService extends Service {
 		mQuit = false;
 
 		locationManager.requestLocationUpdates(provider, 10 * 1000, 10, locationListener);
-		
-		ConfigurationManager.getInstance().readConfigFromFile();
+
+		ConfigurationManager.getInstance().installBundle(R.raw.timebundle);
+		ConfigurationManager.getInstance().startBundle(TimeBundle.class.getName());
 		
 		adaptationContorller = new AdaptationContorller(this, locationManager, provider, mHandler);
 		
