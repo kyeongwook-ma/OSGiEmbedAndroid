@@ -22,10 +22,7 @@ import com.example.androidproject.util.XMLUtil.ConfigBuilder;
 
 public class AdaptationService extends Service {
 
-	private boolean mQuit;
-	
-	private BroadcastReceiver mTimeReceiver = new TimeBroadcast();
-	
+	private boolean mQuit;	
 	private LocationManager locationManager;
 	private String provider;
 	
@@ -65,7 +62,7 @@ public class AdaptationService extends Service {
 
 		locationManager.requestLocationUpdates(provider, 10 * 1000, 10, locationListener);
 
-		ConfigurationManager.getInstance().installBundle(R.raw.timebundle);
+		// ConfigurationManager.getInstance().installBundle(R.raw.timebundle);
 		ConfigurationManager.getInstance().startBundle(TimeBundle.class.getName());
 		
 		adaptationContorller = new AdaptationContorller(this, locationManager, provider, mHandler);
