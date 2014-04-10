@@ -8,7 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.androidproject.adaptation.ConfigurationManager;
+import com.example.androidproject.adaptation.ConfigurationController;
 import com.example.androidproject.adaptation.bundle.time.TimeBundle;
 import com.felix.utils.FelixUtils;
 import com.felix.utils.IApplicationCallback;
@@ -52,7 +52,7 @@ public class MainActivity extends Activity implements IApplicationCallback {
 		mStart.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				mUtils.startBundle("com.example");
+				ConfigurationController.getInstance().startBundle("com.example");
 			}
 		});
 		mStop.setOnClickListener(new OnClickListener() {
@@ -68,7 +68,6 @@ public class MainActivity extends Activity implements IApplicationCallback {
 			}
 		});
 		
-		ConfigurationManager.getInstance().startBundle(TimeBundle.class.getName());
 
 	}
 
@@ -80,6 +79,7 @@ public class MainActivity extends Activity implements IApplicationCallback {
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
+		mUtils = null;
 	}
 
 	@Override
@@ -133,6 +133,8 @@ public class MainActivity extends Activity implements IApplicationCallback {
 
 	}
 
+
+	
 	@Override
 	public void onStopedBundle(String bundleName) {
 		Toast.makeText(this, "onStopedBundle " + bundleName, Toast.LENGTH_SHORT).show();
