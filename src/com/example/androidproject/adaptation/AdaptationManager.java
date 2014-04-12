@@ -1,24 +1,19 @@
 package com.example.androidproject.adaptation;
 
-import com.example.androidproject.adaptation.behavior.DefaultBehavior;
-
-import android.os.Handler;
+import android.content.Context;
 
 
 public class AdaptationManager {
 
-	private Handler handler;
 	
-	public void excuteBehavior(String text) {
+	public void plan(Context analyzedContext) {
 		
-		DefaultBehavior behavior = new DefaultBehavior();
 		
-		behavior.setHandler(handler);
-		
-		behavior.runAction(text);
+		String bundleName = "";
+		executeBundle(bundleName);
 	}
-
-	public void setHandler(Handler handler) {
-		this.handler = handler;
+	
+	private void executeBundle(String bundleName) {
+		ConfigurationController.getInstance().startBundle(bundleName);
 	}
 }

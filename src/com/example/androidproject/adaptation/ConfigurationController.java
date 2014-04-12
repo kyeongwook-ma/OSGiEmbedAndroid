@@ -5,6 +5,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import android.util.Log;
+
 import com.OSGiEmbedApp;
 import com.example.androidproject.adaptation.bundle.BundleSpec;
 import com.example.androidproject.adaptation.bundle.BundleType;
@@ -15,17 +17,17 @@ import com.felix.utils.FelixUtils;
 import com.felix.utils.IApplicationCallback;
 import com.felix.utils.NoMusicServiceException;
 
-public class ConfigurationManager {
+public class ConfigurationController {
 
 	private FelixUtils utils;
-	private static ConfigurationManager instance;
+	private static ConfigurationController instance;
 	private Map<String, BundleType> bundles = new HashMap<String, BundleType>();
 	
 	static {
-		instance = new ConfigurationManager();
+		instance = new ConfigurationController();
 	}
 
-	private ConfigurationManager() {
+	private ConfigurationController() {
 		try {
 			utils = new FelixUtils(OSGiEmbedApp.getContext() , new IApplicationCallback() {
 
@@ -79,11 +81,11 @@ public class ConfigurationManager {
 		}
 	}
 
-	public static ConfigurationManager getInstance() {
+	public static ConfigurationController getInstance() {
 		if(instance != null) {
 			return instance;
 		} else {
-			return new ConfigurationManager();
+			return new ConfigurationController();
 		}
 	}
 

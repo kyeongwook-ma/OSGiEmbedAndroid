@@ -9,32 +9,18 @@ import com.felix.utils.FelixUtils;
 
 public class AdaptationContorller {
 
-	private ContextMonitor contextMonitor;
-	private ContextAnalyzer contextAnalyzer;
+	private AdaptionReasoner adaptationReasonor;
+	private AdaptationManager adaptationManager;
 
-	public AdaptationContorller(Context context, LocationManager locationManager, String provider, Handler handler) {
-
-		this.contextMonitor = new ContextMonitor();
-		this.contextAnalyzer = new ContextAnalyzer();
-
-		AdaptationPlanner adaptationPlanner = new AdaptationPlanner();
-		AdaptationManager adaptationManager = new AdaptationManager();
-
-
-		contextAnalyzer.setAdaptationPlanner(adaptationPlanner);
-		contextAnalyzer.setContext(context);
-		contextAnalyzer.setLocationManager(locationManager);
-		contextAnalyzer.setProvider(provider);
-
-		adaptationManager.setHandler(handler);
-
-		adaptationPlanner.setAdaptationManager(adaptationManager);
+	public AdaptationContorller(Context context) {
+		adaptationManager = new AdaptationManager();
+		adaptationReasonor = new AdaptionReasoner();
+		
+	}
+	
+	public void receiveChangedContext(Context context) {
+		Context analyzedContext = adaptationReasonor.analyzeContext(context);
+		adaptationManager.plan(analyzedContext);
 	}
 
-	public void execute() {
-
-		contextMonitor.monitor();
-
-		contextAnalyzer.analyze();
-	}
 }
