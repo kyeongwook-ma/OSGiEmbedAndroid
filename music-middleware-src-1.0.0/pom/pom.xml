@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Identification -->
+	<groupId>org.istmusic.mw</groupId>
+	<artifactId>pom</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>MUSIC POM</name>
+	<description>Super POM for the MUSIC middleware</description>
+
+	<!-- License -->
+	<licenses>
+		<license>
+			<name>GNU Lesser General Public License, version 2.1</name>
+			<url>http://www.gnu.org/licenses/lgpl-2.1.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<!-- Project URL -->
+	<url>http://www.istmusic.org</url>
+
+	<!-- SCM info -->
+	<scm>
+		<url>http://svn.berlios.de/svnroot/repos/ist-music/music-middleware</url>
+	</scm>
+	
+	<modules>
+		<module>../uuid</module>
+		
+	    <module>../model</module>
+	    <module>../kernel</module>
+	    <module>../manager</module>
+	    <module>../communication</module>
+	    <module>../resources</module>
+	    <module>../context</module>
+	    <module>../user</module>
+	    <module>../adaptation</module>
+
+		<!-- OPTIONAL MODULES -->
+	    <!-- Distributed repository -->
+	    <module>../distributedrepository</module>
+	    <!-- Profile manager -->
+	    <module>../profile</module>
+	    <!-- Update manager -->
+	    <module>../updateservice</module>
+	    <!-- Negotiation (SLA) -->
+	    <module>../negotiation</module>
+	    <!-- Scenario Engine -->
+	    <module>../scenario_engine/scenario_engine.pom</module>
+	    
+	    <!--  PLUGINS -->
+	    <module>../communication.plugins/communication.plugins.pom</module>
+	    <module>../resources.plugins/resources.plugins.pom</module>
+	    <module>../context.plugins/context.plugins.pom</module>
+	    <module>../context.repositories/context.repositories.pom</module>
+	    <module>../device.plugins/device.plugins.pom</module>
+	    <module>../adaptation.plugins/adaptation.plugins.pom</module>
+	    <module>../negotiation.plugins/negotiation.plugins.pom</module>
+	    
+	    <!-- CONTEXT DISTRIBUTION -->
+	    <module>../context.distribution/context.distribution.pom</module>
+	    <module>../context.privacy</module>
+	    
+	    <!-- GUIs -->
+	    <module>../gui/gui.pom</module>
+	    
+		<!-- Integration directory -->	    
+	    <module>../integration</module>
+	</modules>
+
+	<!-- Dependencies -->
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.4</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>osgi_R4_core</artifactId>
+			<version>1.0</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>osgi_R4_compendium</artifactId>
+			<version>1.0</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+	    	
+	<!-- Build settings -->
+	<build>
+		<finalName>${project.groupId}.${project.artifactId}-${project.version}</finalName>
+		<resources>
+			<resource>
+				<directory>.</directory>
+				<includes>
+					<include>LICENSE</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>lib/*</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<excludes>
+					<exclude>META-INF/*</exclude>
+				</excludes>
+				<filtering>false</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>META-INF/*</include>
+				</includes>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<!-- Plugins -->
+		<plugins>
+			<!-- Compilation in Java 1.4 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.4</source>
+					<target>1.4</target>
+				</configuration>
+			</plugin>
+			<!-- Add the manifest file  to the jar file -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifestFile>
+							target/classes/META-INF/MANIFEST.MF
+						</manifestFile>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>music-release</id>                          
+			<name>MUSIC Maven Repository</name>             
+			<url>http://ist-music.berlios.de/maven2/release/</url>
+			<releases>                                            
+				<enabled>true</enabled>                             
+			</releases>                                           
+			<snapshots>                                           
+				<enabled>false</enabled>                            
+			</snapshots>                                          
+		</repository>                                           
+		<repository>                                            
+			<id>music-snapshot</id>                               
+			<name>MUSIC Maven Repository</name>                   
+			<url>http://ist-music.berlios.de/maven2/snapshot/</url>
+			<releases>                                             
+				<enabled>false</enabled>                             
+			</releases>                                            
+			<snapshots>                                            
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>music-release-repository</id>
+			<name>ist-music repository</name>
+			<url>scp://shell.berlios.de/home/groups/ist-music/htdocs/maven2/release</url>
+		</repository>
+		<snapshotRepository>
+			<id>music-snapshot-repository</id>
+			<name>ist-music snapshot repository</name>
+			<url>scp://shell.berlios.de/home/groups/ist-music/htdocs/maven2/snapshot</url>
+		</snapshotRepository>
+		<site>
+			<id>music-site</id>
+			<name>ist-music site</name>
+			<url>scp://shell.berlios.de/home/groups/ist-music/htdocs/site</url>
+		</site>
+	</distributionManagement>
+
+</project>

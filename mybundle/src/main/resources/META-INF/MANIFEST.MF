@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MyTestBundle
+Bundle-SymbolicName: com.example
+Bundle-Version: 1.0.0
+Bundle-Vendor: MyTestVendor
+Bundle-Activator: com.example.Activator
+Service-Component: OSGI-INF/components.xml
+Export-Package: com.example
+Import-Package: org.osgi.framework

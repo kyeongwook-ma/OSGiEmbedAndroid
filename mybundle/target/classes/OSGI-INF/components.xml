@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<component name="MyTestApp" immediate="true">
+	<implementation class="com.example.MyBundle" />
+	<service>
+	    <provide interface="com.abc.ABC"/>	    
+	</service>
+
+	<reference name="AndroidContext" interface="android.content.Context"
+		cardinality="1..1" bind="setAndroidContext" unbind="unsetAndroidContext"
+		policy="dynamic" />
+</component>
