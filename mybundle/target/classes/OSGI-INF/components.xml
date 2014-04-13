@@ -9,4 +9,5 @@
 	<reference name="AndroidContext" interface="android.content.Context"
 		cardinality="1..1" bind="setAndroidContext" unbind="unsetAndroidContext"
 		policy="dynamic" />
+	
 </component>

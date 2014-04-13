@@ -8,7 +8,6 @@ public class TimeBroadcast extends BroadcastReceiver {
 
 	private long diff;
 	
-	@Override
 	public void onReceive(Context context, Intent intent) {
 		this.diff = intent.getExtras().getLong("diff");
 		
