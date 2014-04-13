@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: MyTestBundle
+Bundle-Name: TimeBundle
 Bundle-SymbolicName: selab.dev
 Bundle-Version: 1.0.0
-Bundle-Vendor: MyTestVendor
+Bundle-Vendor: SELAB
 Bundle-Activator: selab.dev.Activator
 Service-Component: OSGI-INF/components.xml
 Export-Package: selab.dev

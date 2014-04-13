@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<component name="MyTestApp" immediate="true">
+<component name="TimeBundleApp" immediate="true">
 	<implementation class="selab.dev.MyBundle" />
 	<service>
 	    <provide interface="com.abc.ABC"/>	    
