@@ -1,4 +1,4 @@
-package com.example;
+package selab.dev;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

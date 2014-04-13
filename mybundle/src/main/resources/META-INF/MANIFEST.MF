@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: MyTestBundle
-Bundle-SymbolicName: com.example
+Bundle-SymbolicName: selab.dev
 Bundle-Version: 1.0.0
 Bundle-Vendor: MyTestVendor
-Bundle-Activator: com.example.Activator
+Bundle-Activator: selab.dev.Activator
 Service-Component: OSGI-INF/components.xml
-Export-Package: com.example
+Export-Package: selab.dev
 Import-Package: org.osgi.framework

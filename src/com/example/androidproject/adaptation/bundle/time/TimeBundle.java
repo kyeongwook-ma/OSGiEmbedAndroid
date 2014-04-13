@@ -17,7 +17,7 @@ public class TimeBundle extends BundleType {
 	private MMRSDBHelper dbHelper;
 	
 	public TimeBundle() {
-		spec.setRawID(R.raw.timebundle);
+		spec.setRawID(R.raw.mybundle);
 		registerReceiver();
 	}
 	
